@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class I18n < Formula
   version "0.1.0"
   sha256 "c9a6ebccbd48e916cf257e555df0d39cd5893fc0d692e99384cb55fa47ff1392"
@@ -9,6 +10,10 @@ class I18n < Formula
 
   def install
     bin.install "i18n-darwin-amd64" => "i18n"
+  end
+
+  test do
+    system "i18n version"
   end
 
 end
