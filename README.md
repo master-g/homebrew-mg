@@ -9,13 +9,13 @@ Get your Homebrew installed first, check [here](https://brew.sh/)
 Add my Tap:
 
 ```sh
-brew tap master-g/homebrew-mg
+brew tap master-g/tap
 ```
 
 Install a Cask:
 
 ```sh
-brew install i18n
+brew install master-g/tap/i18n
 ```
 
 ## Updating
@@ -27,6 +27,6 @@ brew update
 then
 
 ```sh
-brew upgrade i18n
+brew upgrade master-g/tap/i18n
 ```
 
