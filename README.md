@@ -15,7 +15,7 @@ brew tap master-g/homebrew-mg
 Install a Cask:
 
 ```sh
-brew cask install i18n
+brew install i18n
 ```
 
 ## Updating
@@ -27,6 +27,6 @@ brew update
 then
 
 ```sh
-brew cask upgrade i18n
+brew upgrade i18n
 ```
 
