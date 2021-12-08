@@ -3,6 +3,7 @@ class I18n < Formula
   desc "A tool to extract translations from CSV file and append to the strings resources in your Android project"
   homepage "https://github.com/master-g/i18n"
   version "0.1.0"
+  head "https://github.com/master-g/i18n.git"
 
   on_macos do
     if Hardware::CPU.intel?
@@ -16,7 +17,7 @@ class I18n < Formula
   end
 
   test do
-    system "${bin}/i18n version"
+    system "#{bin}/i18n", "version"
   end
 
 end
