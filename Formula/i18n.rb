@@ -1,4 +1,4 @@
-class i18n < Formula
+class I18n < Formula
   version "0.1.0"
   sha256 "c9a6ebccbd48e916cf257e555df0d39cd5893fc0d692e99384cb55fa47ff1392"
 
