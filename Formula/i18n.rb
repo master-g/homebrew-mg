@@ -6,13 +6,13 @@ class I18n < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      sha256 "c9a6ebccbd48e916cf257e555df0d39cd5893fc0d692e99384cb55fa47ff1392"
-      url "https://github.com/master-g/i18n/releases/download/v0.1.0/i18n-darwin-amd64"
+      sha256 "f7503847e592f4d02e6d57edfa697e515e8efda6a426c85348bf09eb0488044f"
+      url "https://github.com/master-g/i18n/releases/download/v0.1.0/i18n_0.1.0_darwin_amd64.zip"
     end
   end
 
   def install
-    bin.install "i18n-darwin-amd64" => "i18n"
+    bin.install "i18n"
   end
 
   test do
