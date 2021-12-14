@@ -5,21 +5,21 @@
 class ProtocGenBean < Formula
   desc "Java Value Object Generator Plugin For Protobuf"
   homepage "https://github.com/master-g/protoc-gen-bean"
-  version "0.2.4"
+  version "0.2.5"
   license "Apache License"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.4/protoc-gen-bean_0.2.4_darwin_arm64.zip"
-      sha256 "287113cf3bb60ae3aa91a4a40d5df64d96ab8674c1e97c9187949fb6208aeb2b"
+      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.5/protoc-gen-bean_0.2.5_darwin_arm64.zip"
+      sha256 "5d68c9d0a7539169213cce028106e41054c32f9cc3d29cf2a172012154378a02"
 
       def install
         bin.install "protoc-gen-bean"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.4/protoc-gen-bean_0.2.4_darwin_amd64.zip"
-      sha256 "6f3f5cdbdcda4918119bed2cdde67034a4b875a62d05712bc999bf025398731a"
+      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.5/protoc-gen-bean_0.2.5_darwin_amd64.zip"
+      sha256 "0126be931902c86a9131932a4ce2390f8bde8d0837ef5a5d6b2de8fbd81ddf37"
 
       def install
         bin.install "protoc-gen-bean"
@@ -29,16 +29,16 @@ class ProtocGenBean < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.4/protoc-gen-bean_0.2.4_linux_arm64.zip"
-      sha256 "7f82d62d86bd4af176ae933495798dc3b97c0cb79986d5e76547f171976a9728"
+      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.5/protoc-gen-bean_0.2.5_linux_arm64.zip"
+      sha256 "ede90b6300d8fef37f6bcb9f10b1945c6e5fde13fb700258cd8974679f2d3630"
 
       def install
         bin.install "protoc-gen-bean"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.4/protoc-gen-bean_0.2.4_linux_amd64.zip"
-      sha256 "0f8d09a8f1154a0c05716211f444a3589cd6375eb8a201929366fee2abf310eb"
+      url "https://github.com/master-g/protoc-gen-bean/releases/download/v0.2.5/protoc-gen-bean_0.2.5_linux_amd64.zip"
+      sha256 "10bf2d8137cf95915482eb3c1494fa9f5973fb20f587b12307d230fb4f5c5d1c"
 
       def install
         bin.install "protoc-gen-bean"
