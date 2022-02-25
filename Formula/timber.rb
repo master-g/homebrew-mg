@@ -5,21 +5,21 @@
 class Timber < Formula
   desc "A tool to extract translations from CSV file and append to the strings resources in your Android project"
   homepage "https://github.com/master-g/timber"
-  version "0.0.4"
+  version "0.0.5"
   license "Apache License"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/master-g/timber/releases/download/v0.0.4/timber_0.0.4_darwin_arm64.zip"
-      sha256 "f064bed3741bf2849632119a2b21fd2f16c98df9885b479c0ce93a8c5cdaf3e5"
+      url "https://github.com/master-g/timber/releases/download/v0.0.5/timber_0.0.5_darwin_arm64.zip"
+      sha256 "8ca9f89e5b237e8e6e6d86dad975b1ed54acdec0b768cd799812536e3e40eb65"
 
       def install
         bin.install "timber"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/master-g/timber/releases/download/v0.0.4/timber_0.0.4_darwin_amd64.zip"
-      sha256 "f4d725fa2d4c1755f3970c23f072382a3763c989bbf029a2183b5850cb85c7bc"
+      url "https://github.com/master-g/timber/releases/download/v0.0.5/timber_0.0.5_darwin_amd64.zip"
+      sha256 "957ecd3f9f53a78bcb40ece4e0a6da41f3fa40f900a898b3b4e3d177a5b5c0a4"
 
       def install
         bin.install "timber"
@@ -29,16 +29,16 @@ class Timber < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/master-g/timber/releases/download/v0.0.4/timber_0.0.4_linux_arm64.zip"
-      sha256 "23c99e3db114ed7ac1787f5541eb11924e84a43eb16cf702bd0149f552a35353"
+      url "https://github.com/master-g/timber/releases/download/v0.0.5/timber_0.0.5_linux_arm64.zip"
+      sha256 "1b659140ce77f97182b855f40d5f0e7789fcb418ecc60e6850922a580d5eca50"
 
       def install
         bin.install "timber"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/master-g/timber/releases/download/v0.0.4/timber_0.0.4_linux_amd64.zip"
-      sha256 "f7974f4b8deba48a268d55f880f5012c2114b21186739989ce5764cd7f3e9cfd"
+      url "https://github.com/master-g/timber/releases/download/v0.0.5/timber_0.0.5_linux_amd64.zip"
+      sha256 "63c90c051a548997fd2e97a2b2be8bad76b1ca9af73873b2aa8d6a1a9d093a69"
 
       def install
         bin.install "timber"
