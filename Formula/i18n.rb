@@ -5,21 +5,21 @@
 class I18n < Formula
   desc "A tool to extract translations from CSV file and append to the strings resources in your Android project"
   homepage "https://github.com/master-g/i18n"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache License"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.3/i18n_0.1.3_darwin_arm64.zip"
-      sha256 "3118da3aa0c4cf7226ecf51d4f7aeb7c32d817dce33f498db29bc314066b2c56"
+      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_darwin_arm64.zip"
+      sha256 "2d4fb33c0dacc3c36532c088a62bd33eec259e3bb9750d90dc34929d4c6e6827"
 
       def install
         bin.install "i18n"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.3/i18n_0.1.3_darwin_amd64.zip"
-      sha256 "4d98cbf614e39b769bc66e7c39e0acb2d233db568a4ef951f0a4b431338fafca"
+      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_darwin_amd64.zip"
+      sha256 "e97ae638ffecd1dd5c8292af0f929b36c4d11a2bd88649a7c6f266d9040ab8ee"
 
       def install
         bin.install "i18n"
@@ -29,16 +29,16 @@ class I18n < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.3/i18n_0.1.3_linux_arm64.zip"
-      sha256 "927a353b5620cc027d0515f5c197977d06aea777b3c09e19711783d728fde813"
+      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_linux_arm64.zip"
+      sha256 "cf91c9f3efff123013f45e0b543f7689df3e7249b3983ce5c6ae55a36a0ec06d"
 
       def install
         bin.install "i18n"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.3/i18n_0.1.3_linux_amd64.zip"
-      sha256 "021b058b7d3448904bb7c9e9570408f57b9cdda0a0f83a262dede2e28eb9771e"
+      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_linux_amd64.zip"
+      sha256 "731d7888ae8fa7caaebcb2e90ceaea26b5d29b0e74c4027c9e44fc9432621b74"
 
       def install
         bin.install "i18n"
