@@ -5,21 +5,21 @@
 class I18n < Formula
   desc "A tool to extract translations from CSV file and append to the strings resources in your Android project"
   homepage "https://github.com/master-g/i18n"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache License"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_darwin_arm64.zip"
-      sha256 "2d4fb33c0dacc3c36532c088a62bd33eec259e3bb9750d90dc34929d4c6e6827"
+    on_intel do
+      url "https://github.com/master-g/i18n/releases/download/v0.1.5/i18n_0.1.5_darwin_amd64.zip"
+      sha256 "a469ac58c8890f1c9704ab090fd30f24dc3958908914545fe6e06cd3dfdb9c0e"
 
       def install
         bin.install "i18n"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_darwin_amd64.zip"
-      sha256 "e97ae638ffecd1dd5c8292af0f929b36c4d11a2bd88649a7c6f266d9040ab8ee"
+    on_arm do
+      url "https://github.com/master-g/i18n/releases/download/v0.1.5/i18n_0.1.5_darwin_arm64.zip"
+      sha256 "a0e28767d264002521fb93294063d01d43280028f6ee6a2094b47305f8d20f59"
 
       def install
         bin.install "i18n"
@@ -28,20 +28,24 @@ class I18n < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_linux_arm64.zip"
-      sha256 "cf91c9f3efff123013f45e0b543f7689df3e7249b3983ce5c6ae55a36a0ec06d"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/master-g/i18n/releases/download/v0.1.5/i18n_0.1.5_linux_amd64.zip"
+        sha256 "5ebac95fe3b6417ae11b5d9eda39817307fc1650e69a966d77f36271a8b4fe8c"
 
-      def install
-        bin.install "i18n"
+        def install
+          bin.install "i18n"
+        end
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/master-g/i18n/releases/download/v0.1.4/i18n_0.1.4_linux_amd64.zip"
-      sha256 "731d7888ae8fa7caaebcb2e90ceaea26b5d29b0e74c4027c9e44fc9432621b74"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/master-g/i18n/releases/download/v0.1.5/i18n_0.1.5_linux_arm64.zip"
+        sha256 "aa8dc3b46e4e4eee73e737a23fa31095326d404eee2be781c821aec6ccfd2706"
 
-      def install
-        bin.install "i18n"
+        def install
+          bin.install "i18n"
+        end
       end
     end
   end
